@@ -1,2 +1,1 @@
-# PianoHTMLJourney
-Mimo Course
+# Piano-HTML-Journey
