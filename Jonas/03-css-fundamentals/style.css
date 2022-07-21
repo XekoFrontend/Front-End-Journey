@@ -87,11 +87,11 @@ ul li:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
-rticle p:last-child {
+/* article p:last-child {
   color: brown;
-}
+} */
 
-/* Styling Link */
+/* Styling Link - LVHA */
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -104,7 +104,7 @@ a:visited {
 a:hover {
   color: orange;
   font-weight: bold;
-  text-decoration: underline wavy orange;
+  text-decoration: underline dotted orange;
 }
 
 a:active {
