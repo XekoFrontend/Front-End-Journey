@@ -8,7 +8,7 @@
 
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>🐼 Lesson 1 - Greeting</h1>
         <nav class="navigation">
           <a href="index.html">Home</a>
@@ -17,139 +17,156 @@
         </nav>
       </header>
 
-      <article>
-        <header class="post-header">
-          <h2 class="article-title">how to say hello!</h2>
-          <img src="img/avatar.jpg" alt="PianoGuitar" width="50" height="50" />
-          <p id="author">
-            Posted by <strong>PianoGuitar</strong> on Monday, July 18th, 2022
+      <div class="row">
+        <article>
+          <header class="post-header">
+            <h2 class="article-title">how to say hello!</h2>
+            <div class="author-box">
+              <img
+                src="img/avatar.jpg"
+                alt="PianoGuitar"
+                width="50"
+                height="50"
+              />
+              <p id="author">
+                Posted by <strong>PianoGuitar</strong> on Monday, July 18th,
+                2022
+              </p>
+            </div>
+            <img
+              class="post-image"
+              src="img/hello-in-chinese.webp"
+              alt="How to say 'Hello' in Chinese"
+            />
+            <button class="like-button">&hearts; Like</button>
+          </header>
+          <h3>New words</h3>
+          <!--Add some audio files-->
+          <ol>
+            <li>
+              <strong>你</strong>
+              <a
+                href="https://translate.google.com/translate_tts?ie=UTF-8&tl=en-US&client=tw-ob&q=text"
+                target="blank "
+                >Audio</a
+              >
+            </li>
+            <li>
+              <strong>好</strong>
+            </li>
+            <li>
+              <strong>我</strong>
+            </li>
+            <li>
+              <strong>是</strong>
+            </li>
+            <li>
+              <strong>呢</strong>
+            </li>
+            <li>
+              <strong>叫</strong>
+            </li>
+            <li>
+              <strong>很</strong>
+            </li>
+            <li>
+              <strong>高兴</strong>
+            </li>
+            <li>
+              <strong>认识</strong>
+            </li>
+          </ol>
+          <h3>Hello!</h3>
+          <p>There are some <em>dialogs</em>:</p>
+          <ol>
+            <li>
+              <ul>
+                <li>
+                  A: 你好。我叫Zhang Xintong. 你叫什么<strong>名字</strong>?
+                </li>
+                <li>B: 我叫Pigi. <strong>很高宗认识你</strong>!</li>
+                <li>A: 我<strong>也</strong>很高宗认识你。</li>
+                <!-- <br /> -->
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>A: <strong>恁</strong>好! 我是中国人.你是哪国人？</li>
+                <li>B: 我是英国人。</li>
+                <!-- <br /> -->
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  A: 你<strong>们</strong>好!。你<strong>们</strong>是中国人吗？
+                </li>
+                <li>B: 不是。我是Vietnamese。她是中国人。</li>
+                <li>A: 我<strong>也</strong>是中国人。你好!</li>
+              </ul>
+            </li>
+          </ol>
+          <h3>h3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            deserunt odio eum quidem adipisci ipsam consectetur illo ea omnis
+            suscipit iusto cupiditate recusandae id, unde repudiandae sequi
+            delectus saepe blanditiis.
           </p>
+          <p>
+            Hopefully you learned something new here.
+            <a href="#"> Next Lesson &rarr;</a>
+          </p>
+        </article>
 
-          <img
-            class="post-image"
-            src="img/hello-in-chinese.webp"
-            alt="How to say 'Hello' in Chinese"
-          />
-          <button class="like-button">&hearts; Like</button>
-        </header>
-
-        <h3>New words</h3>
-        <!--Add some audio files-->
-        <ol>
-          <li>
-            <strong>你</strong>
-            <a
-              href="https://translate.google.com/translate_tts?ie=UTF-8&tl=en-US&client=tw-ob&q=text"
-              target="blank "
-              >Audio</a
-            >
-          </li>
-          <li>
-            <strong>好</strong>
-          </li>
-          <li>
-            <strong>我</strong>
-          </li>
-          <li>
-            <strong>是</strong>
-          </li>
-          <li>
-            <strong>呢</strong>
-          </li>
-          <li>
-            <strong>叫</strong>
-          </li>
-          <li>
-            <strong>很</strong>
-          </li>
-          <li>
-            <strong>高兴</strong>
-          </li>
-          <li>
-            <strong>认识</strong>
-          </li>
-        </ol>
-
-        <h3>Hello!</h3>
-
-        <p>There are some <em>dialogs</em>:</p>
-        <ol>
-          <li>
-            <ul>
-              <li>
-                A: 你好。我叫Zhang Xintong. 你叫什么<strong>名字</strong>?
-              </li>
-              <li>B: 我叫Pigi. <strong>很高宗认识你</strong>!</li>
-              <li>A: 我<strong>也</strong>很高宗认识你。</li>
-              <!-- <br /> -->
-            </ul>
-          </li>
-
-          <li>
-            <ul>
-              <li>A: <strong>恁</strong>好! 我是中国人.你是哪国人？</li>
-              <li>B: 我是英国人。</li>
-              <!-- <br /> -->
-            </ul>
-          </li>
-
-          <li>
-            <ul>
-              <li>
-                A: 你<strong>们</strong>好!。你<strong>们</strong>是中国人吗？
-              </li>
-              <li>B: 不是。我是Vietnamese。她是中国人。</li>
-              <li>A: 我<strong>也</strong>是中国人。你好!</li>
-            </ul>
-          </li>
-        </ol>
-
-        <h3>h3</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          deserunt odio eum quidem adipisci ipsam consectetur illo ea omnis
-          suscipit iusto cupiditate recusandae id, unde repudiandae sequi
-          delectus saepe blanditiis.
-        </p>
-
-        <p>
-          Hopefully you learned something new here.
-          <a href="#"> Next Lesson &rarr;</a>
-        </p>
-      </article>
-
-      <aside>
-        <h4>Related Posts</h4>
-        <ul class="related-list">
-          <li>
-            <img
-              src="img/related-posts-1.jpg"
-              alt="What's your name?"
-              width="75"
-              height="75"
-            /><a href="#">Lesson 2 - What's your name?</a>
-            <p class="related-author">By CaiBing</p>
-          </li>
-          <li>
-            <img
-              src="img/related-posts-2.jpg"
-              alt="What's the time?"
-              width="75"
-              height="75"
-            /><a href="#">Lesson 3 - What's the time? - Part 1</a>
-            <p class="related-author">By Lee</p>
-          </li>
-          <li>
-            <img
-              src="img/related-posts-3.webp"
-              alt="What's the time?"
-              width="75"
-              height="75"
-            /><a href="#">Lesson 4 - What's the time? - Part 2</a>
-            <p class="related-author">By Zhang XinTong</p>
-          </li>
-        </ul>
-      </aside>
+        <aside>
+          <h4>Related Posts</h4>
+          <ul class="related-list">
+            <li class="related-post">
+              <img
+                src="img/related-posts-1.jpg"
+                alt="What's your name?"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a class="related-link" href="#"
+                  >Lesson 2 - What's your name?</a
+                >
+                <p class="related-author">By CaiBing</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                src="img/related-posts-2.jpg"
+                alt="What's the time?"
+                width="75"
+                height="75"
+              />
+              <div class="">
+                <a class="related-link" href="#"
+                  >Lesson 3 - What's the time? - Part 1</a
+                >
+                <p class="related-author">By Lee</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                src="img/related-posts-3.webp"
+                alt="What's the time?"
+                width="75"
+                height="75"
+              />
+              <div class="">
+                <a class="related-link" href="#"
+                  >Lesson 4 - What's the time? - Part 2</a
+                >
+                <p class="related-author">By Zhang XinTong</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </div>
 
     <footer>
