@@ -112,10 +112,14 @@ h1 {
 }
 
 .message {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   height: 3rem;
 }
 
 .label-score {
+  margin-bottom: 2rem;
+}
+
+.label-turn {
   margin-bottom: 2rem;
 }
