@@ -280,12 +280,12 @@ console.log(
 */
 
 // CHALLENGE 2.3
-
+/*
 const bmi = {
   firstName: ["Mark", "John"],
   lastName: ["Miller", "Smith"],
-  mass: [78, 92],
-  height: [1.69, 1.95],
+  mass: [78, 92, 99],
+  height: [1.69, 1.95, 1.85],
   calcBMI: function () {
     for (i = 0; i < this.mass.length; i++) {
       this.bmiMark = Math.trunc(this.mass[i] / this.height[i] ** 2);
@@ -295,24 +295,30 @@ const bmi = {
     return this.bmiResult;
   },
   bmiResult: [],
-  // Fixme
-  // getSummary: function () {
-  //   this.bmiSummary = `${this.firstName[0]}'s BMI: ${this.bmiMark[i]}, is ${
-  //     this.bmiMark > this.bmiJohn ? "higher" : "lower"
-  //   } than ${this.firstName[1]}'s BMI: ${Math.floor(this.bmiResult[i++])}.`;
-  //   return this.bmiSummary;
-  // },
-  // sortBMI: function(){
-  //   if(this.bmiResult[i])
-  // }
-};
+  */
+// Fixme
+// getSummary: function () {
+//   this.bmiSummary = `${this.firstName[0]}'s BMI: ${this.bmiMark[i]}, is ${
+//     this.bmiMark > this.bmiJohn ? "higher" : "lower"
+//   } than ${this.firstName[1]}'s BMI: ${Math.floor(this.bmiResult[i++])}.`;
+//   return this.bmiSummary;
+// },
+// sortBMI: function () {
+//   if (this.bmiResult[i] > this.bmiResult[i]) {
+//     ketQua.unshift(this.bmiResult);
+//   }
+//   return;
+// },
+// };
+// let ketQua = [];
+// console.log(ketQua);
 // bmi.mass.pop();
 // bmi.mass.push(10);
 
-bmi.calcBMI();
+// bmi.calcBMI();
 // bmi.getSummary();
 
-console.log(bmi.bmiResult);
+// console.log(bmi.bmiResult);
 // console.log(bmi.bmiSummary);
 
 // bmi.mass.pop();
@@ -365,3 +371,54 @@ for (let i = 0; i < jonas.length; i++) {
   console.log(jonas[i], typeof jonas[i]);
 }
 */
+/*
+let counter = 3;
+function myDay() {
+  // console.log('Morning');
+  // console.log('Afternoon');
+  // console.log('Evening');
+  console.log(counter);
+  counter = counter - 1;
+  if (counter === 0) return;
+  myDay();
+}
+myDay(); // 3 2 1
+*/
+
+/*
+function addTwoNumbs(a, b) {
+  console.log(a + b);
+}
+
+function randomNum() {
+  return Math.floor(Math.random() * 10 + 1);
+}
+function specificNum() {
+  return 42;
+}
+
+var useRandom = true;
+
+var getNumber;
+
+if (useRandom) {
+  getNumber = randomNum;
+} else {
+  getNumber = specificNum;
+}
+
+addTwoNumbs(getNumber(), getNumber());
+*/
+
+function meal(animal) {
+  animal.food = animal.food + 10;
+}
+
+const dog = {
+  food: 10,
+};
+meal(dog);
+meal(dog);
+
+console.log(dog.food);
+//30
