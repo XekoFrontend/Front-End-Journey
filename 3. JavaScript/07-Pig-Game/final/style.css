@@ -19,6 +19,7 @@ body {
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
   display: flex;
   align-items: center;
+  justify-items: center;
   justify-content: center;
 }
 
