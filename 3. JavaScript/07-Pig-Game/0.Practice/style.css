@@ -104,7 +104,7 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #444;
+  color: rgb(#333);
   background: none;
   border: none;
   font-family: inherit;
