@@ -7,17 +7,24 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    Hello World
-    <!-- <embed
-      src="/tieu-lam-chinh-tri-viet-nam-nam-1980.pdf"
-      type="application/pdf"
-      width="100%"
-      height="900px"
-    /> -->
-    <iframe
-      src="/tieu-lam-chinh-tri-viet-nam-nam-1980.pdf#toolbar=0"
-      width="100%"
-      height="900px"
-    />
+    <form action="submit">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        minlength="3"
+        maxlength="12"
+      />
+      <input
+        type="text"
+        id="password"
+        name="password"
+        required
+        minlength="6"
+        maxlength="12"
+      />
+      <button>Login</button>
+    </form>
   </body>
 </html>
