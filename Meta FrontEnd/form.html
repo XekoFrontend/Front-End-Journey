@@ -42,7 +42,7 @@
     </form>
 
     <form action="/my_action_page">
-      <label for="flowers">Favourite flower:</label><br />
+      <label for="flowers">Favorite flower:</label><br />
       <input list="flowers" name="flowers" />
       <datalist id="flowers">
         <option value="Rose"></option>
@@ -51,8 +51,54 @@
         <option value="Daffodil"></option>
         <option value="Orchid"></option>
       </datalist>
-
-      ...
     </form>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Little Lemon</title>
+
+        <meta property="og:title" content="Our Menu" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="logo.png" />
+        <meta property="og:url" content="https://littlelemon/" />
+        <meta
+          property="og:description"
+          content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Little Lemon" />
+
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <header>
+          <img src="logo.png" />
+        </header>
+        <main>
+          <form>
+            <div>
+              <label for="email">Email Address:</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div>
+              <label for="date">Date of Booking</label>
+              <input id="date" name="date" type="date" />
+            </div>
+            <div>
+              <label for="people">Number of people</label>
+              <input type="number" name="people" id="people" min="1" max="8" />
+            </div>
+            <div>
+              <label for="agree">I agree to the cancellation policy</label
+              ><input type="checkbox" name="agree" id="agree" required />
+            </div>
+            <button type="submit" name="btn_booknow" id="btn_booknow">
+              Book Now
+            </button>
+          </form>
+        </main>
+      </body>
+    </html>
   </body>
 </html>
