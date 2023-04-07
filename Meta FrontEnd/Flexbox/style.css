@@ -1,0 +1,127 @@
+.box {
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.flex-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  background-color: rgb(201, 201, 201);
+  margin: 40px;
+
+  /* ***FLEX-BOX*** */
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.box3,
+.box5 {
+  background-color: coral;
+  align-self: flex-start;
+}
+
+.box5 {
+  flex: 1 1 auto;
+}
+
+.box7 {
+  background-color: aquamarine;
+  height: 250px;
+}
+
+/* ************************************ */
+/* justify-content:
+  This property is used to align flex items along the main axis (horizontally in a row or vertically in a column). It defines how extra space should be distributed among flex items or how they should be aligned when there is extra space available. The values for justify-content include: flex-start (aligns items to the start of the main axis), flex-end (aligns items to the end of the main axis), center (aligns items to the center of the main axis), space-between (distributes space between items with equal gaps), space-around (distributes space around items with equal gaps), and space-evenly (distributes space evenly between items, including at the start and end).
+
+  align-items:
+  This property is used to align flex items along the cross axis (vertically in a row or horizontally in a column). It defines how flex items should be aligned within their flex container. The values for align-items include: flex-start (aligns items to the start of the cross axis), flex-end (aligns items to the end of the cross axis), center (aligns items to the center of the cross axis), baseline (aligns items to their baselines), and stretch (stretches items to fill the cross axis).
+
+  align-self:
+  This property is used to override the align-items property on individual flex items. It allows you to specify how a specific flex item should be aligned along the cross axis, independently of other items in the same flex container. The values for align-self are the same as align-items.
+
+  align-content:
+  This property is used to control the alignment of flex lines (when there are multiple rows or columns of flex items) along the cross axis. It defines how flex lines should be aligned within their flex container. The values for align-content include: flex-start (aligns lines to the start of the cross axis), flex-end (aligns lines to the end of the cross axis), center (aligns lines to the center of the cross axis), space-between (distributes space between lines with equal gaps), space-around (distributes space around lines with equal gaps), and stretch (stretches lines to fill the cross axis). 
+  
+  
+  gap property:
+  can be used to create space between the items along the main axis. You can also individually configure the gaps in rows and columns using row-gap and column-gap properties.   */
+
+/* *****  NAVIGATION  ***** */
+.nav {
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  background-color: darkslateblue;
+  color: #ffffffec;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: stretch;
+  margin: 1vh 0;
+  background-color: darkslateblue;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+navigation a {
+  text-decoration: none;
+  color: #ffffffec;
+}
+
+/* *****  SEARCH BAR  ***** */
+.search-bar {
+  display: inline-flex;
+  /* justify-content: center; */
+  margin: 5vh auto;
+  border: 0.15rem solid #d4d4d4ec;
+  border-radius: 1rem;
+  width: 50vw;
+  overflow: hidden;
+}
+
+.searchBox {
+  justify-self: flex-start;
+  padding: 1rem;
+  /* border-color: darkgray; */
+
+  font-size: 1.25rem;
+  border: 0;
+}
+
+.search-bar-btn {
+  justify-self: flex-end;
+  padding: 1rem;
+  /* border-radius: 1rem; */
+  border: none;
+  background-color: rgb(0, 75, 136);
+  color: #ffffffec;
+  font-size: 1.25rem;
+}
+
+.search-bar-btn:hover {
+  background-color: rgb(0, 95, 173);
+}
+
+/* *****  GALLERY  ***** */
+.img {
+  width: 10px;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 10%;
+}
