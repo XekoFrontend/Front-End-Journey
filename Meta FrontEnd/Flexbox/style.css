@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .box {
   background-color: cornflowerblue;
   border-radius: 5px;
@@ -53,18 +59,11 @@
   can be used to create space between the items along the main axis. You can also individually configure the gaps in rows and columns using row-gap and column-gap properties.   */
 
 /* *****  NAVIGATION  ***** */
-.nav {
-  padding: 1rem;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2rem;
-  background-color: darkslateblue;
-  color: #ffffffec;
-}
 
 .navigation {
   display: flex;
   flex-flow: row wrap;
-  justify-items: stretch;
+  justify-content: stretch;
   margin: 1vh 0;
   background-color: darkslateblue;
 }
@@ -73,55 +72,182 @@
   list-style-type: none;
 }
 
-navigation a {
+.nav {
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: darkslateblue;
+  color: #ffffffec;
+}
+
+.nav a:link {
   text-decoration: none;
   color: #ffffffec;
 }
 
-/* *****  SEARCH BAR  ***** */
-.search-bar {
+.nav a:active {
+  color: darkslateblue;
+}
+
+.nav:hover {
+  background-color: #d4d4d4ec;
+}
+
+.nav a:visited {
+  color: #ffffffec;
+}
+
+.nav:last-child {
+  margin-right: 0;
+}
+
+/* *****  SEARCH Navigation  ***** */
+
+.search-bar-nav {
   display: inline-flex;
-  /* justify-content: center; */
-  margin: 5vh auto;
-  border: 0.15rem solid #d4d4d4ec;
-  border-radius: 1rem;
-  width: 50vw;
+  flex: 1 1 300px;
+  /* margin: 2rem auto; */
+  /* border: 0.15rem solid #d4d4d4ec; */
+  /* border-radius: 1rem; */
+  /* width: 50vw; */
+  /* width: 50%; */
   overflow: hidden;
+  /* Có hai giá trị chính của thuộc tính overflow là hidden và scroll. Giá trị hidden sẽ dấu đi nội dung vượt quá phần tử cha và giá trị scroll sẽ hiển thị thanh cuộn để người dùng có thể cuộn để xem nội dung */
 }
 
 .searchBox {
-  justify-self: flex-start;
   padding: 1rem;
-  /* border-color: darkgray; */
-
   font-size: 1.25rem;
-  border: 0;
+  border: none;
+  outline: none;
+  /* width: 100%; */
+  flex: 1; /* Fill remaining space within .search-bar */
 }
 
-.search-bar-btn {
-  justify-self: flex-end;
+.search-icon {
+  display: flex;
+  align-items: center;
   padding: 1rem;
-  /* border-radius: 1rem; */
-  border: none;
+  background-color: #ffffffec;
+}
+
+.search-icon svg {
+  fill: darkslateblue;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.searchBox::placeholder {
+  /* Set initial placeholder opacity to 1 */
+  opacity: 1;
+}
+
+.searchBox:focus::placeholder {
+  /* Hide placeholder on focus */
+  opacity: 0;
+}
+
+.searchbtn {
+  padding: 1rem;
+  border: 0;
   background-color: rgb(0, 75, 136);
   color: #ffffffec;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
-.search-bar-btn:hover {
+.searchbtn:hover {
   background-color: rgb(0, 95, 173);
 }
 
-/* *****  GALLERY  ***** */
-.img {
-  width: 10px;
-  height: auto;
+.searchbtn:active {
+  background-color: rgb(0, 75, 136);
 }
+
+/* *****  SEARCH BAR  ***** */
+
+.search-bar {
+  display: inline-flex;
+  /* flex: 1 1 300px; */
+  margin: 2rem auto;
+  /* border: 0.15rem solid #d4d4d4ec; */
+  border-radius: 1rem;
+  /* width: 50vw; */
+  /* width: 50%; */
+  overflow: hidden;
+  /* Có hai giá trị chính của thuộc tính overflow là hidden và scroll. Giá trị hidden sẽ dấu đi nội dung vượt quá phần tử cha và giá trị scroll sẽ hiển thị thanh cuộn để người dùng có thể cuộn để xem nội dung */
+}
+
+.searchBox {
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  /* width: 100%; */
+  flex: 1; /* Fill remaining space within .search-bar */
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffffec;
+}
+
+.search-icon svg {
+  fill: darkslateblue;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.searchBox::placeholder {
+  /* Set initial placeholder opacity to 1 */
+  opacity: 1;
+}
+
+.searchBox:focus::placeholder {
+  /* Hide placeholder on focus */
+  opacity: 0;
+}
+
+.searchbtn {
+  padding: 1rem;
+  border: 0;
+  background-color: rgb(0, 75, 136);
+  color: #ffffffec;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.searchbtn:hover {
+  background-color: rgb(0, 95, 173);
+}
+
+.searchbtn:active {
+  background-color: rgb(0, 75, 136);
+}
+
+/* *****  GALLERY  ***** */
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
-  width: 10%;
+  margin: 2rem;
 }
+
+.img img {
+  width: 100%;
+  margin: 1rem;
+  border: none;
+}
+
+/* @media (min-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+} */
