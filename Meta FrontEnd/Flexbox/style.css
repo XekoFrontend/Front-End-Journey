@@ -107,21 +107,14 @@
 .search-bar-nav {
   display: inline-flex;
   flex: 1 1 300px;
-  /* margin: 2rem auto; */
-  /* border: 0.15rem solid #d4d4d4ec; */
-  /* border-radius: 1rem; */
-  /* width: 50vw; */
-  /* width: 50%; */
   overflow: hidden;
-  /* Có hai giá trị chính của thuộc tính overflow là hidden và scroll. Giá trị hidden sẽ dấu đi nội dung vượt quá phần tử cha và giá trị scroll sẽ hiển thị thanh cuộn để người dùng có thể cuộn để xem nội dung */
 }
 
-.searchBox {
+.searchBox-nav {
   padding: 1rem;
   font-size: 1.25rem;
   border: none;
   outline: none;
-  /* width: 100%; */
   flex: 1; /* Fill remaining space within .search-bar */
 }
 
@@ -148,7 +141,7 @@
   opacity: 0;
 }
 
-.searchbtn {
+.searchbtn-nav {
   padding: 1rem;
   border: 0;
   background-color: rgb(0, 75, 136);
