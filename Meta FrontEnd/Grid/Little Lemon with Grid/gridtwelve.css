@@ -34,3 +34,17 @@
   background-color: lightgreen;
   grid-column: 3 / span 7;
 }
+
+.text-container {
+  position: relative;
+}
+
+.text-container::after {
+  content: "***";
+  position: absolute;
+  bottom: -10px; /* Điều chỉnh khoảng cách đường kẻ so với văn bản */
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: bold;
+}
