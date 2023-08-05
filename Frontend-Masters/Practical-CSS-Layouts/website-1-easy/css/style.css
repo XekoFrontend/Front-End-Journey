@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap");
+
+@layer base-layer {
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --base-size: 1rem;
+    --scale: 1.25;
+    --h1: calc(var(--h2) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h5: calc(var(--h6) * var(--scale));
+    --h6: var(--base-size);
+
+    /* colors */
+    --lime: #a4ffa2;
+    --magenta: #f47dda;
+    --magenta50: #f47dda80;
+    --white: #ffffff;
+    --tan: #cec5b4;
+    --teal: #2e6d81;
+    --cyan: #7de6f4;
+    --black: #050d14;
+    --shadow: #050d1480;
+    /* My new colors */
+    --base-color: #16213e;
+    --primary-color: #e94560;
+    --secondary-color: #a4ffa2;
+    --font-color: #f1f3f5;
+
+    /* fonts family */
+    --sans-serif: "Poppins", sans-serif;
+  }
+
+  body {
+    font-family: var(--sans-serif);
+    font-weight: 300;
+    color: var(--font-color);
+    background-color: var(--base-color);
+    text-align: center;
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--h1);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--h2);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--h3);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--h4);
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--h5);
+  }
+
+  h6,
+  .h6 {
+    font-size: var(--h6);
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  a:link,
+  a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--font-color);
+    text-decoration: none;
+  }
+
+  a:active {
+    color: var(--secondary-color);
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer header-banner-tour {
+  .wrapper {
+    max-width: 375px;
+    /* Check preview mobile device */
+    /* border: 1px solid white; */
+    margin: 0 auto;
+  }
+
+  header {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  header img {
+    max-width: 150px;
+  }
+
+  @layer main-tour {
+    .h3 {
+      font-weight: 300;
+    }
+
+    main p {
+      line-height: 2;
+      padding: var(--base-size) 0 var(--base-size);
+    }
+
+    .tour-date {
+      color: var(--primary-color);
+    }
+
+    .tour-name {
+      color: var(--secondary-color);
+      font-size: var(--h5);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      max-width: 768px;
+    }
+
+    /* Pro Tip: adding rule before layout */
+    /* main > * {
+      border: 1px solid #ccc;
+    } */
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    main > h1 {
+      /* grid-row-star, grid-column-star, grid-row-end, grid-column-end */
+      grid-area: 1 / 1 / 2 / 4;
+      /* Other Solutions */
+      /* grid-column: 1 / 4; */
+      /* grid-column: 1 / -1; */
+    }
+
+    /* Reference */
+    /* main > p:last-of-type {
+      grid-column: 2 / 3;
+    } */
+  }
+}
+
+@layer reviews {
+  /* Todo: Align the spacing of three rows of figure elements. */
+
+  .imggroup {
+    margin-top: 2rem;
+  }
+
+  figcaption > cite {
+    font-style: normal;
+
+    /* Here is my temporary solution */
+    display: block;
+    margin-top: -3px;
+  }
+
+  blockquote {
+    margin-top: 0.5rem;
+  }
+
+  .star {
+    width: 1em;
+  }
+
+  @media screen {
+    aside {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+}
+
+@layer footer {
+  footer {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  footer p:first-child {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* gap: 0 2rem; */
+  }
+
+  main {
+    grid-area: 1 /2 / 5 /3;
+    display: block;
+    margin: 0;
+    padding-top: 12rem;
+  }
+}

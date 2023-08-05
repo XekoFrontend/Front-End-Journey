@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(cornflowerblue, cornflowerblue 50%, white 50%);
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.panel {
+  background-color: whitesmoke;
+  border-radius: 0px;
+  padding: 15px 25px;
+  width: min(100%, 960px);
+  /* width: 100%;
+  max-width: 960px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 10px 2px rgba(3, 21, 44, 0.25);
+}
+
+.pricing-plan {
+  /* flex: 1 1 auto; */
+  /* align-self: center; */
+  /* flex: 1; */
+  border-bottom: 1px solid #e1f1ff;
+  &:last-child {
+    border: none;
+  }
+}
+
+/* CSS rules được xử lý theo nguyên tắc "cascading" (thuộc tính ghi đè) và "specificity" (độ ưu tiên). Khi có nhiều quy tắc CSS áp dụng cho cùng một phần tử, quy tắc được định nghĩa cuối cùng sẽ được sử dụng. */
+
+@media (min-width: 768px) {
+  .panel {
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  .pricing-plan {
+    border: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.pricing-img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.pricing-header {
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #1776ba;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+  margin: 50px 0px 25px;
+  font-size: 0.75rem;
+}
+
+.pricing-features-item {
+  padding: 10px 0 10px;
+  border-bottom: 1px solid #e1f1ff;
+  &:first-of-type {
+    border-top: 1px solid #e1f1ff;
+  }
+}
+
+.pricing-price {
+  font-weight: 700;
+  color: #086db5;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.pricing-button {
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 25px 0;
+  border: 1px solid #1776ba;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1776ba;
+  /* background-color: transparent; */
+
+  &:hover,
+  &:focus {
+    background-color: #1776ba1a;
+    transition: background-color 200ms ease-in-out;
+  }
+}
+
+.pricing-button.is-features {
+  background-color: #086db5;
+  color: whitesmoke;
+  &:hover,
+  &:focus {
+    background-color: #269aff;
+  }
+}

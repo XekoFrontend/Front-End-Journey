@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #011638;
+  --secondary-color: #f16b6f;
+  --font-color: #ebebeb;
+  --base-size: 1rem;
+  --scale: 1.25; /* Make one edit to adjust the heading ratio scale uniformly. */
+  --h5: calc(var(--base-size) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+  --sans-serif: "Poppins", sans-serif;
+}
+
+body {
+  /* display: flex;
+  justify-content: center; */
+  font-family: var(--sans-serif);
+  font-size: var(--base-size);
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+.color-container {
+  display: flex;
+  flex-flow: row wrap; /* Important: flex-flow*/
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.color-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3px;
+  background-color: blueviolet;
+}
+
+.box-1 {
+  background-color: var(--primary-color);
+  border: 1px solid var(--font-color);
+}
+
+.box-2 {
+  background-color: var(--secondary-color);
+}
+
+.box-3 {
+  background-color: var(--font-color);
+}
+
+.heading-1 {
+  font-size: var(--h1);
+}
+
+.heading-2 {
+  font-size: var(--h2);
+}
+
+.heading-3 {
+  font-size: var(--h3);
+}
+
+.heading-4 {
+  font-size: var(--h4);
+}
+
+.heading-5 {
+  font-size: var(--h5);
+}
+
+.heading-6,
+.small-text {
+  font-size: calc(var(--base-size) / var(--scale));
+}
+
+.main-text {
+  font-size: var(--base-size);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--font-color);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
