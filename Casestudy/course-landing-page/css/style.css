@@ -1,0 +1,389 @@
+@layer base {
+  /* Reset */
+  *,
+  *:before,
+  :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Base */
+  :root {
+    /* Primary Color */
+    --color-accent: #ff5252;
+    --color-primary: #3f51b5;
+    --color-primary-dark: #303f9f;
+    --color-primary-light: #c5cae9;
+    --font-color-primary: #212121;
+    --font-color-secondary: #757575;
+    --font-color-divider: #bdbdbd;
+    --font-color-text-icon: #f8f9fa;
+
+    /* Accent Color */
+    --color-green: #22c55e;
+    --color-purple: #8f57f7;
+    --color-orange: #f8a401;
+
+    /* Size */
+    --base-size: 1rem;
+    --scale: 1.25;
+    --h5: calc(var(--base-size) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h6: calc(var(--base-size) / var(--scale));
+
+    ol,
+    ul {
+      list-style: none;
+    }
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-primary-dark);
+    font-weight: 300;
+    color: var(--font-color-primary);
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--h2);
+    letter-spacing: 0.15px;
+    font-weight: 900;
+    line-height: 1.25;
+  }
+
+  h2,
+  .h2 {
+    line-height: 1.25;
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: var(--h3);
+    text-align: center;
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--h3);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--h5);
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--h5);
+  }
+
+  h6,
+  .h6 {
+    font-size: var(--h6);
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  button {
+    font-weight: 600;
+    color: var(--font-color-text-icon);
+    background-color: var(--color-accent);
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 3px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+/* Wrapper */
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.wrapper * {
+  /* border: 1px solid #757575; */
+}
+
+/* Header */
+header {
+  background-color: #303f9f;
+  color: var(--font-color-text-icon);
+}
+
+.logo-container {
+  /* float: left; */
+  /* display: flex; */
+  /* flex-direction: row;
+  justify-content: space-between; */
+}
+
+.logo {
+  width: 100px;
+  /* justify-self: start; */
+}
+
+.logo-name {
+  font-size: var(--h6);
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.logo-slogan {
+  font-size: calc(var(--h6) / var(--scale));
+  color: var(--color-orange);
+}
+
+logo > .fa {
+  float: right;
+  /* display: flex;
+  justify-self: flex-end; */
+}
+
+nav {
+  margin: 1rem auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header > nav {
+  display: none;
+}
+
+header > img {
+  /* margin-bottom: -24px; */
+  /* ToDo: Margin-Bottom Error  */
+}
+
+/* Search Bar */
+
+.search {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.search-input {
+  height: 2.5rem;
+}
+
+.search-input::placeholder {
+  color: var(--font-color-divider);
+}
+
+.search-input:focus {
+  outline: none;
+  color: var(--color-primary-dark);
+}
+
+.btn-search {
+  position: absolute;
+}
+
+/* Main */
+main {
+  background-color: var(--font-color-text-icon);
+}
+
+section > p {
+  padding: 0.5rem 0.5rem;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  /* border-top: 1px solid var(--font-color-divider);
+  border-bottom: 1px solid var(--font-color-divider); */
+  padding: 1rem 0.5rem;
+}
+
+main > hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.partners > img {
+  width: auto;
+  height: 35px;
+}
+
+/* Learning Steps */
+.learnStep {
+  background-color: var(--font-color-text-icon);
+}
+
+/* Features */
+.features {
+  text-align: center;
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.features > h2 {
+  grid-column: 1 / -1;
+}
+
+.featureBox {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: var(--h6);
+}
+
+.featureBox > .fa {
+  padding: 1rem;
+  color: var(--font-color-text-icon);
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  font-size: var(--h5);
+  font-weight: 400;
+}
+
+.feature-1 > .fa {
+  background-color: var(--color-green);
+}
+
+.feature-2 > .fa {
+  background-color: var(--color-purple);
+}
+
+.feature-3 > .fa {
+  background-color: var(--color-accent);
+}
+
+.feature-4 > .fa {
+  background-color: var(--color-orange);
+}
+
+h3 {
+  font-size: var(--base-size);
+  font-weight: 600;
+}
+
+p {
+  grid-column: 1 / -1;
+}
+
+.feature-1 {
+}
+
+/* -----LearnStep------ */
+.learnStep {
+  background-color: white;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.learnStep > p {
+  text-align: center;
+}
+
+.learnStep > img {
+  margin: 2rem 0;
+}
+
+.learnStep > .fa {
+  font-size: var(--h3);
+  /* float: left; */
+  width: 65px;
+  height: 65px;
+  /* create a circle */
+  border-radius: 50%;
+  /* align the icon to center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-user {
+  color: var(--color-green);
+  background-color: rgba(34, 197, 94, 0.15);
+}
+.fa-book {
+  color: var(--color-purple);
+  background-color: rgba(143, 87, 247, 0.15);
+}
+.fa-graduation-cap {
+  color: var(--color-accent);
+  background-color: rgba(255, 82, 82, 0.15);
+}
+
+/* -----Courses Box----- */
+.course {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2rem;
+  /* padding: 1rem; */
+  box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.225);
+}
+
+.course:last-child {
+  margin-bottom: 3rem;
+}
+
+/* div + img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+} */
+
+.course > .fa {
+  color: var(--font-color-text-icon);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-star,
+.fa-star-half-o,
+.fa-star-o {
+  color: var(--color-orange);
+}
+
+.instructor-avatar {
+  width: 78px;
+  border-radius: 50%;
+}
+/* Footer */
+footer {
+  background-color: var(--color-primary-dark);
+  color: var(--font-color-text-icon);
+}

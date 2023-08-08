@@ -16,8 +16,8 @@
     --h2: calc(var(--h3) * var(--scale));
     --h3: calc(var(--h4) * var(--scale));
     --h4: calc(var(--h5) * var(--scale));
-    --h5: calc(var(--h6) * var(--scale));
-    --h6: var(--base-size);
+    --h5: calc(var(--base-size) * var(--scale));
+    --h6: var(--base-size) / var(--scale);
 
     /* colors */
     --lime: #a4ffa2;
