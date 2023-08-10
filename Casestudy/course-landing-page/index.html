@@ -19,27 +19,36 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="logo-container">
-          <img class="logo" src="images/logo-150.png" alt="Web Course Logo" />
-          <p class="logo-name">Web Course</p>
-          <p class="logo-slogan">Enhance your knowledge</p>
+        <div class="headerNav">
+          <div class="logo">
+            <img
+              class="logoImg"
+              id="to"
+              src="images/logo-150.png"
+              alt="Web Course Logo"
+            />
+            <p class="logoText">
+              <span class="logoName">Web Course</span><br />
+              <span class="logoSlogan">Enhance Knowledge</span>
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Courses</li>
+              <li>Article</li>
+              <li>Contact</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </nav>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <nav>
-          <ul>
-            <li id="home">Home</li>
-            <li>Courses</li>
-            <li>Article</li>
-            <li>Contact</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </nav>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <i class="fa fa-bars" aria-hidden="true"></i>
         <h1>Find your course Change your life</h1>
         <p>
           Are you looking for a way to learn the skills and build amazing
-          websites and applications? If you answered yes, then you need to find
-          your web development course today!
+          websites and apps? If you answered yes, then you need to find your web
+          development course today!
         </p>
         <div class="search">
           <i class="fa fa-search" aria-hidden="true"></i>
@@ -59,7 +68,7 @@
 
       <main>
         <img src="images/banners/banner-470.png" alt="A female student" />
-        <hr />
+
         <div class="partners">
           <img
             src="images/partnerships/coursera-logo.svg"
@@ -69,7 +78,7 @@
           <img src="images/partnerships/meta-logo.svg" alt="Meta logo" />
           <img src="images/partnerships/google-logo.png" alt="Youtube logo" />
         </div>
-        <hr />
+
         <section class="features">
           <h2>Our Special Features For You</h2>
           <p>
@@ -77,35 +86,25 @@
             courses from the best providers.
           </p>
           <div class="featureBox feature-1">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <i class="fa fa-rocket" aria-hidden="true"></i>
             <h3>Pro Programs</h3>
-            <p>
-              Web development is one of the most in-demand and rewarding fields
-              in the world.
-            </p>
+            <p>Web development is one of the most in-demand in the world.</p>
           </div>
           <div class="featureBox feature-2">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
             <h3>24/7 Support</h3>
-            <p>
-              Don't wait any longer. You have nothing to lose and everything to
-              gain.
-            </p>
+            <p>You have nothing to lose and everything to gain.</p>
           </div>
           <div class="featureBox feature-3">
-            <i class="fa fa-laptop" aria-hidden="true"></i>
-            <h3>Career Planning</h3>
-            <p>
-              Whether you want to become a front-end, back-end, or full-stack
-              developer.
-            </p>
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <h3>Career Builder</h3>
+            <p>Whether you want to become a front-end developer.</p>
           </div>
           <div class="featureBox feature-4">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             <h3>Pro training</h3>
             <p>
-              You can work on projects that make a difference, express your
-              creativity.
+              You can work on projects that make an express your creativity.
             </p>
           </div>
         </section>
@@ -121,21 +120,29 @@
             src="images/banners/learning-steps.png"
             alt="A person making a peace sign with their fingers, wearing a blue shirt, and standing in front of a red abstract background with yellow and purple squiggles"
           />
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <h3>Create Account</h3>
-          <p>
-            Fill out a simple form with your details and payment information.
-          </p>
-          <i class="fa fa-book" aria-hidden="true"></i>
 
-          <h3>Choose Course</h3>
-          <p>Choose your course from our list of curated options.</p>
-          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <div class="stepBox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <div class="step-1">
+              <h3>Create Account</h3>
+              <p>
+                Fill out a simple form with your details and payment
+                information.
+              </p>
+            </div>
 
-          <h3>Enjoy Learning</h3>
-          <p>
-            Access your course materials and start learning at your own pace.
-          </p>
+            <i class="fa fa-sitemap" aria-hidden="true"></i>
+            <div class="step-2">
+              <h3>Choose Course</h3>
+              <p>Choose your course from our list of curated options.</p>
+            </div>
+
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <div class="step-3">
+              <h3>Enjoy Learning</h3>
+              <p>Access your course and start learning at your own pace.</p>
+            </div>
+          </div>
         </section>
 
         <section class="container-courses">
@@ -144,183 +151,248 @@
             But how do you find the best web development course for you? That's
             where we come in.
           </p>
-          <div class="course course-1">
+          <div class="course">
             <img
               src="images/courses/course-1.png"
               alt="Graphic Design & Color Painting Essential Skills"
             />
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <p>26 Lessons</p>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
+            <div class="course-info">
+              <div class="course-review">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p>26 Lessons</p>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h4>Graphic Design & Color Painting Essential Skills</h4>
+
+              <div class="course-instructor">
+                <img
+                  class="instructor-avatar"
+                  src="images/instructor-avatars/image-1.png"
+                  alt="Christine Garza Avatar"
+                />
+                <p class="instructor">
+                  <span class="instructor-name">Christine Garza</span>
+                  <br />
+                  <span class="instructor-title">UI/UX Designer</span>
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+              </div>
             </div>
-            <h4>Graphic Design & Color Painting Essential Skills</h4>
-            <hr />
-            <img
-              class="instructor-avatar"
-              src="images/instructor-avatars/image-1.png"
-              alt="Christine Garza Avatar"
-            />
-            <p class="instructor-name">Christine Garza</p>
-            <p>Instructor</p>
-            <button>Learn more</button>
           </div>
 
-          <div class="course course-2">
+          <div class="course">
             <img
               src="images/courses/course-2.png"
               alt="Web Development Fundamentals"
             />
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <p>16 Lessons</p>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
+            <div class="course-info">
+              <div class="course-review">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p>16 Lessons</p>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h4>Web Development Fundamentals</h4>
+
+              <div class="course-instructor">
+                <img
+                  class="instructor-avatar"
+                  src="images/instructor-avatars/image-2.png"
+                  alt="John Doe Avatar"
+                />
+                <p class="instructor">
+                  <span class="instructor-name">John Doe</span>
+                  <br />
+                  <span class="instructor-title">Frontend Engineer</span>
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+              </div>
             </div>
-            <h4>Web Development Fundamentals</h4>
-            <hr />
-            <img
-              class="instructor-avatar"
-              src="images/instructor-avatars/image-2.png"
-              alt="John Doe Avatar"
-            />
-            <p class="instructor-name">John Doe</p>
-            <p>Instructor</p>
-            <button>Learn more</button>
           </div>
 
-          <div class="course course-3">
+          <div class="course">
             <img
               src="images/courses/course-3.png"
               alt="Web Development with JavaScript"
             />
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <p>20 Lessons</p>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
+            <div class="course-info">
+              <div class="course-review">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p>20 Lessons</p>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h4>Web Development with JavaScript</h4>
+
+              <div class="course-instructor">
+                <img
+                  class="instructor-avatar"
+                  src="images/instructor-avatars/image-3.png"
+                  alt="Jane Smith Avatar"
+                />
+                <p class="instructor">
+                  <span class="instructor-name">Jane Smith</span>
+                  <br />
+                  <span class="instructor-title">Instructor</span>
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+              </div>
             </div>
-            <h4>Web Development with JavaScript</h4>
-            <hr />
-            <img
-              class="instructor-avatar"
-              src="images/instructor-avatars/image-3.png"
-              alt="Jane Smith Avatar"
-            />
-            <p class="instructor-name">Jane Smith</p>
-            <p>Instructor</p>
-            <button>Learn more</button>
           </div>
 
-          <div class="course course-4">
+          <div class="course">
             <img
               src="images/courses/course-4.png"
               alt="Frontend Development Basics"
             />
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <p>12 Lessons</p>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
+            <div class="course-info">
+              <div class="course-review">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p>12 Lessons</p>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h4>Frontend Development Basics</h4>
+
+              <div class="course-instructor">
+                <img
+                  class="instructor-avatar"
+                  src="images/instructor-avatars/image-4.png"
+                  alt="Jack Jackson Avatar"
+                />
+                <p class="instructor">
+                  <span class="instructor-name">Jack Jackson</span>
+                  <br />
+                  <span class="instructor-title">Frontend Engineer</span>
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+              </div>
             </div>
-            <h4>Frontend Development Basics</h4>
-            <hr />
-            <img
-              class="instructor-avatar"
-              src="images/instructor-avatars/image-4.png"
-              alt="Michael Johnson Avatar"
-            />
-            <p class="instructor-name">Michael Johnson</p>
-            <p>Instructor</p>
-            <button>Learn more</button>
           </div>
 
-          <div class="course course-5">
+          <div class="course">
             <img
               src="images/courses/course-5.png"
               alt="Advanced CSS Techniques"
             />
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <p>30 Lessons</p>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
+            <div class="course-info">
+              <div class="course-review">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p>30 Lessons</p>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h4>Advanced CSS Techniques</h4>
+
+              <div class="course-instructor">
+                <img
+                  class="instructor-avatar"
+                  src="images/instructor-avatars/image-5.png"
+                  alt="Emily Lee Avatar"
+                />
+                <p class="instructor">
+                  <span class="instructor-name">Emily Lee</span>
+                  <br />
+                  <span class="instructor-title">Frontend Engineer</span>
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+              </div>
             </div>
-            <h4>Advanced CSS Techniques</h4>
-            <hr />
-            <img
-              class="instructor-avatar"
-              src="images/instructor-avatars/image-5.png"
-              alt="Emily Lee Avatar"
-            />
-            <p class="instructor-name">Emily Lee</p>
-            <p>Instructor</p>
-            <button>Learn more</button>
           </div>
 
-          <div class="course course-6">
+          <div class="course">
             <img
               src="images/courses/course-6.png"
               alt="Introduction to Backend Development"
             />
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <p>22 Lessons</p>
-            <div class="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
+            <div class="course-info">
+              <div class="course-review">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p>22 Lessons</p>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+              <h4>Introduction to Backend Development</h4>
+
+              <div class="course-instructor">
+                <img
+                  class="instructor-avatar"
+                  src="images/instructor-avatars/image-6.png"
+                  alt="Thao Mai Avatar"
+                />
+                <p class="instructor">
+                  <span class="instructor-name">Thao Mai</span>
+                  <br />
+                  <span class="instructor-title">Backend Engineer</span>
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+              </div>
             </div>
-            <h4>Introduction to Backend Development</h4>
-            <hr />
-            <img
-              class="instructor-avatar"
-              src="images/instructor-avatars/image-6.png"
-              alt="Robert Anderson Avatar"
-            />
-            <p class="instructor-name">Robert Anderson</p>
-            <p>Instructor</p>
-            <button>Learn more</button>
           </div>
         </section>
       </main>
+
       <!-- Footer -->
       <footer>
-        <div class="logo">
+        <div class="logoBottom">
           <img
-            class="logo-container"
+            class="logoImg"
             src="images/logo-150.png"
             alt="Web Course Logo"
           />
-          <p class="logo-name">Web Course</p>
-          <p class="logo-slogan">Enhance your knowledge</p>
+          <p class="logoText">
+            <span class="logoName">Web Course</span><br />
+            <span class="logoSlogan">Enhance your knowledge</span>
+          </p>
         </div>
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Article</li>
-            <li>Contact</li>
-            <li>Privacy Policy</li>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="courses.html">Courses</a>
+            </li>
+            <li>
+              <a href="article.html">Article</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </li>
           </ul>
         </nav>
         <div class="bage">
@@ -330,7 +402,14 @@
           />
         </div>
         <p id="copyright">&copy; 2023 WebCourse. All rights reserved.</p>
-        <button>Top</button><button>Bottom</button>
+        <div class="scollBtn">
+          <a href="#top"
+            ><i class="fa fa-angle-double-up" aria-hidden="true"></i
+          ></a>
+          <a href="#copyright"
+            ><i class="fa fa-angle-double-down" aria-hidden="true"></i
+          ></a>
+        </div>
       </footer>
     </div>
   </body>

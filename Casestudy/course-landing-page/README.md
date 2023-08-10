@@ -21,6 +21,7 @@ Description of the project goes here. This is an exciting project that I worked 
 - Design from: [Phuong Designer - ui8.net](https://ui8.net/phuong-designer/products/library-course---responsive-landing-page)
 - Color Palette: https://www.materialpalette.com/indigo/red
 - Font: [Google Fonts](https://fonts.google.com/share?selection.family=Poppins:wght@300;400;600;900)
+- Logo: [Adobe Express](https://www.adobe.com/express/create/logo)
 - Stock Images and Illustrations: [Canva](https://www.canva.com/design/DAFqpo_fCVQ/WDZNC6QofFC7Nxe3Syq43w/edit)
 - Avatar UI: https://www.diverseui.com/?ref=producthunt
 - Icons: [Font Awesome](https://fontawesome.com/v4/icons/) - [_following_](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
