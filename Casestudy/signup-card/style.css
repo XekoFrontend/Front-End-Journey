@@ -1,0 +1,174 @@
+:root {
+  /* COLOR CSS HEX */
+
+  --clr-primary: #b0d8da;
+  --clr-secondary: #a3d0d3ff;
+  --clr-accent: #5abbc2ff;
+  --clr-text-icons: #ffffffff;
+  --clr-divider: #bdbdbd;
+  --clr-secondary-text-silver: #a6a6a6ff;
+  --clr-primary-text-black: #030303ff;
+
+  /* FONT FAMILY */
+  --ff-base: "Montserrat", sans-serif;
+
+  --font-size: 0.875rem;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-semi-bold: 500;
+
+  /* SIZE */
+
+  --base-size: 1rem;
+  --scale: 1.25;
+  --h5: calc(var(--base-size) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+  --h6: calc(var(--base-size) / var(--scale));
+
+  /* BORDER RADIUS */
+  --btn-radius: 5px;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+/* GENERAL STYLING */
+
+body {
+  background-color: var(--clr-secondary);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: var(--font-size);
+  color: var(--clr-secondary-text-silver);
+
+  /* for this project */
+  display: grid;
+  place-content: center;
+  margin: var(--base-size);
+}
+
+button {
+  font-weight: var(--fw-bold);
+  color: var(--clr-text-icons);
+  width: 100%;
+  padding: var(--form--padding);
+  background-color: var(--clr-accent);
+  border: none;
+  border-radius: var(--btn-radius);
+}
+
+a:link,
+a:visited {
+  color: var(--clr-accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--clr-primary);
+}
+
+.wrapper {
+  --content-spacing: 1rem;
+  --form--padding: 0.5rem 0;
+  background-color: var(--clr-text-icons);
+  overflow: hidden;
+  border: 3px solid var(--clr-text-icons);
+  border-radius: var(--base-size);
+  box-shadow: 0px 20px 25px 8px rgba(40, 109, 112, 0.35);
+}
+
+.container {
+  border-top-left-radius: var(--base-size);
+  border-top-right-radius: var(--base-size);
+  padding: 4rem 2rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-spacing);
+  align-items: center;
+}
+
+.signup-title {
+  font-size: var(--h5);
+  color: var(--clr-primary-text-black);
+  font-weight: var(--fw-bold);
+  align-self: flex-start;
+}
+
+.languages {
+  font-size: var(--h6);
+  align-self: flex-end;
+}
+
+.signup-with-btn {
+  width: 100%;
+  color: var(--clr-primary-text-black);
+  text-align: center;
+  border: 1px solid var(--clr-divider);
+  border-radius: var(--btn-radius);
+  padding: var(--form--padding);
+}
+
+.form * {
+  margin: var(--content-spacing) 0;
+}
+
+.form input {
+  /* display: flex; */
+  width: 100%;
+  /* max-width: 274px; */
+  border: 0;
+  border-bottom: 1px solid var(--clr-divider);
+  padding: var(--form--padding);
+}
