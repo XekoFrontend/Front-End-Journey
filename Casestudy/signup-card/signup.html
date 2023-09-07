@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Component</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -18,18 +20,30 @@
   </head>
   <body>
     <div class="wrapper">
-      <p class="slogan">
-        Join us today and get access to the best features and services for your
-        online needs.
-      </p>
-      <picture class="signup-img">
-        <img src="img/mobile-3d-shapes.png" alt="Sign up illustration" />
-      </picture>
+      <div class="banner">
+        <i class="bx bxs-sticker logo"></i>
+        <p class="slogan">
+          Join us today and get access to the best features and services.
+        </p>
+        <picture class="signup-img">
+          <source
+            srcset="img/desktop-3d-shapes.png"
+            media="(min-width: 768px)"
+          />
+          <img src="img/mobile-3d-shapes.png" alt="Sign up illustration" />
+        </picture>
+      </div>
       <div class="container">
         <p class="languages">English (US) <i class="bx bxs-down-arrow"></i></p>
         <h1 class="signup-title">Create Account</h1>
-        <div class="signup-with-btn google-btn">Sign up with Google</div>
-        <div class="signup-with-btn facebook-btn">Sign up with Facebook</div>
+        <div class="signup-addon">
+          <div class="button btn-signup" data-icon="btn-google">
+            Sign up with Google
+          </div>
+          <div class="button btn-signup" data-icon="btn-facebook">
+            Sign up with Facebook
+          </div>
+        </div>
         <p>- OR -</p>
         <form class="form" action="/registration" method="post">
           <input id="username" type="text" placeholder="Full Name" required />
@@ -39,6 +53,7 @@
             type="password"
             placeholder="Password"
             required
+            minlength="8"
           />
           <!-- <i class="bx bxs-low-vision"></i> -->
           <button class="button">Create Account</button>
